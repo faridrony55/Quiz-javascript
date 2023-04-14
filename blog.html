@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Quiz Hero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index.js" defer></script>
+
+    <!-- You don't need to change noChange.js file. It's fine -->
+    <script src="./noChange.js" defer></script>
+    <!-- You don't need to change noChange.js file. It's fine -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              common: ["Rubik", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white font-common">
+    <!-- Header/Navbar section start -->
+    <header class="h-16 flex items-center shadow-sm">
+      <nav class="flex justify-between items-center w-9/12 mx-auto">
+        <div class="text-zinc-800 font-bold uppercase">
+          <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+          <p class="text-[10px] font-normal capitalize -mt-1">
+            Get ready to Quiz and be amazed!
+          </p>
+        </div>
+        <button  onclick="window.location.href='./'" 
+          class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
+        > 
+
+          Start Exam
+        </button>
+      </nav>
+    </header>
+    <!-- Header/Navbar section end -->
+
+    <!-- Landing page content start -->
+    <section
+      class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto text-center"
+      id="rulesContainer"
+    >
+      <h1 class="text-center my-8 text-5xl ">Question Answers:</h1>
+      <div class="lg:w-[80%] md:w-[90%] w-[90%] mx-auto text-left">
+        
+        <!-- Quiz rules start -->
+        <ul class="text-sm my-10">
+            <li class="my-4">
+              <h2 class="bg-orange-200 px-7 py-2 text-xl mb-3 rounded inline-block">
+                  What are difference between Map, filter, foreach, find   ?
+              </h2> 
+              <p class="text-lg"><b>map()</b> create a new array from the previous data without modifying any data </p>  
+              <p class="text-lg"><b>filter()</b> pass the value and get the data from array and make a new array and return the value. </p>  
+              <p class="text-lg"><b>forEach()</b> exicute the data without creating an array and performing some actions on each element</p>  
+              <p class="text-lg"><b>find()</b> return the specific value based on requested value </p>  
+            </li>
+            <li class="my-4">
+              <h2 class="bg-orange-200 px-7 py-2 text-xl mb-3 rounded inline-block">
+                What are difference between local storage, session storage , cookies ?
+              </h2> 
+              <p class="text-lg"><b>local Storage:</b> use to store data on the client’s computer. Allow saving of values in a web browser. There are no expiration date. User can clear the browser data or cache to erase all localStorage data. And data is readable</p>  
+              <p class="text-lg"><b>session Storage:</b> stores the data only for a session, meaning that the data is stored until the browser is closed</p> 
+              <p class="text-lg"><b>cookies:</b> a small pieces of data stored in client’s computer. The data such as user preferences, login details, and shopping cart items are stored.</p>   
+            </li>
+            <li class="my-4">
+              <h2 class="bg-orange-200 px-7 py-2 text-xl mb-3 rounded inline-block">
+                How event loop works?
+              </h2>
+              <p class="text-lg">  Event Loop use to monitor callstack and callback queue and processing them one by one.</p>   
+            </li> 
+           
+        </ul>
+        <!-- Quiz rules end -->
+      </div>
+      
+    </section>
+    <!-- Landing page content start --> 
+    
+
+    <!-- Footer section start -->
+    <footer class="py-10 text-center text-sm">
+      Copyright © 2023 Quiz Hero All Rights Reserved.
+    </footer>
+    <!-- Footer section end -->
+  </body>
+</html>
